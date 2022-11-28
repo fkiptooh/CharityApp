@@ -19,7 +19,7 @@ public class CategoryTest {
 
     @Test
     public void createCategory(){
-        Category firstCategory = new Category("Electronics");
+        Category firstCategory = new Category("Clothes");
         Category savedCategory = repo.save(firstCategory);
         assertThat(savedCategory.getId()).isGreaterThan(0);
     }
